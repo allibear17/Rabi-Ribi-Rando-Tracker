@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+<html><header><title>Rabi-Ribi Rando Location Tracker Starisms</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts/main.js"></script>
+	<script src="scripts/locations.js"></script>
+</header>
+<body class="body" onload="justLoaded()">
+	<button onclick="showSection(0)" type="button" style= "background-color:#62a362">S. Woodland</button>
+	<button onclick="showSection(1)" type="button" style= "background-color:#5478a5">W. Coast</button>
+	<button onclick="showSection(2)" type="button" style= "background-color:#5ea9a4">Island Core</button>
+	<button onclick="showSection(3)" type="button" style= "background-color:#8165d1">N Tundra</button>
+	<button onclick="showSection(4)" type="button" style= "background-color:#b89368">E.  Highlands</button>
+	<button onclick="showSection(5)" type="button" style= "background-color:#a96036">Other</button>
+	<input type="color" id="bgcolor" value="#666666" onchange="changeBG()">
+	<button onClick="info()" type="button">info</button>
+	<div id="info" class="info">
+		<a href="https://github.com/allibear17/Rabi-Ribi-Rando-Tracker" target="_blank">Click here for readme and source</a>
+	</div>
+	
+	<div id="mapdisplay" class="map-container">
+		<p><span id="tt" class="tooltip">Tooltip Info</span></p>
+		
+		<div id="swood" class="base">
+			<img src="images/01.png">
+		</div>
+		<div id="wcoast" class="base">
+			<img src="images/02.png">
+		</div>
+		<div id="core" class="base">
+			<img src="images/03.png">
+		</div>
+		<div id="ntun" class="base">
+			<img src="images/04.png">
+		</div>
+		<div id="ehigh" class="base">
+			<img src="images/05.png">
+		</div>
+		<div id="other" class="base">
+			<img src="images/06.png">
+		</div>
+	</div>
+</body>
+</html>

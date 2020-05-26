@@ -1,0 +1,149 @@
+body {
+	background-color: #7b4785
+}
+button {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 4px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 2px 0px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 10px;
+	box-shadow: 0 2px #999;
+}
+button:active{
+	box-shadow: 0 2px #666;
+	transform: translateY(2px);
+}
+
+.markera{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+    border: none;
+    padding: 0px 0px;
+	z-index: 2;
+}
+
+.markerb{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+    border: none;
+    padding: 0px 0px;
+	z-index: 2;
+	outline: rgba(255, 255, 255, 1) solid 2px;
+	outline-offset: -1.5px;
+}
+
+.tooltip {
+	font-family: helvetica, arial, sans-serif;
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+    background: #ffffcc;
+    border: 1px solid black;
+    padding: 5px;
+    z-index: 1000;
+    color: black;
+}
+.base{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 720px;
+	padding-top: 0px;
+	padding-left: 0px;
+	display: none;
+	z-index: 0;
+}
+.info{
+	position: absolute;
+	text-align: right;
+	top: 20;
+	left: 200;
+	width: 600px;
+	padding-top: 0px;
+	padding-left: 0px;
+	display: none;
+	z-index: 3;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.map-container{
+	position: relative;
+	max-width: 720px;
+	max-height: 480px;
+}
+a{
+	background-color: #ffffcc;
+	font-family: helvetica, arial, sans-serif;
+	color: #000000;
+}
+.shop-dropdown{
+	display: none;
+	background-color: #666666;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 210px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+	padding-top: 4px;
+	padding-left: 4px;
+	border: 2px solid black;
+	z-index: 4;
+}
+.shop-item{
+	width: 25px;
+	height: 25px;
+	padding: 2px 2px 2px 2px;
+	background-color: #444444;
+	border: 1px solid black;
+}
+.in-shop{
+	background-color: rgba(0,0,0,0);
+	border: none;
+	padding: 0px 0px;
+	display: inline-block;
+	margin: 0px 0px;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 0px #999;
+	z-index: 4;
+}
+.in-shop:active{
+	box-shadow: 0 0px #999;
+	transform: translateY(2px);
+}
+.item{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	opacity: 0.5;
+	filter: grayscale(100%);
+}
+table{
+	position: relative;
+	width: 600px;
+	height: 28px;
+	margin-top: 10px;
+	margin-bottom: -13px;
+}
+td{
+	width: 32px;
+	height: 32px;
+	padding-top: 5px;
+}
