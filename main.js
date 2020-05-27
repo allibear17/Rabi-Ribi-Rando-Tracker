@@ -138,7 +138,7 @@ function toggleItem(e){
 
 addEventListener('contextmenu', function(e) {
 	e.preventDefault();
-	if (( e.target.className == "markera" ) || ( e.target.className == "markerb" )){
+	if (( e.target.className == "markera" ) || ( e.target.className == "markerb" ) || ( e.target.className == "markerc" ) || ( e.target.className == "markerd" ) || ( e.target.className == "markere" )){
 		var clicked = document.getElementById(e.target.id);
 		var clickedSrc = clicked.getAttribute("src");
 		var type = 0;
