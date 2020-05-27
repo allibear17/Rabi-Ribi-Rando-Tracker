@@ -13,7 +13,8 @@ var lastClick;
 
 function justLoaded(){
 	hideAll();
-	drawMarkers();
+	UpdateConstraints();
+	//drawMarkers();
 	showSection(0);
 }
 
@@ -101,11 +102,27 @@ function info(){
 	}
 }
 
-function Location(x, y){
-	this.x = x;
-	this.y = y;
-	this.canReach = false;
-	this.elem = "";
+class Location{
+	difficulty=DifficultyLevel.BEGINNER;
+	constructor(x, y, gridObj, itemName) {
+		this.x = x*gridObj.xgrid+gridObj.xoffset;
+		this.y = y*gridObj.ygrid+gridObj.yoffset;
+		this.canReach = false;
+		this.elem = "";
+		this.itemName = itemName;
+		this.gridObj = gridObj;
+		constraints[itemName]=NONE;
+	}
+}
+
+class GridlineObj{
+	constructor(xoffset,yoffset,xgrid,ygrid) {
+		this.xoffset=xoffset;
+		this.yoffset=yoffset;
+		this.xgrid=xgrid;
+		this.ygrid=ygrid;
+	}
+	
 }
 
 function toggleItem(e){

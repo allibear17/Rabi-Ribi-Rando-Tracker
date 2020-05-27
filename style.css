@@ -26,8 +26,8 @@ button:active{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 32px;
-	height: 32px;
+	/*width: 32px;
+	height: 32px;*/
     border: none;
     padding: 0px 0px;
 	z-index: 2;
@@ -37,12 +37,51 @@ button:active{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 32px;
-	height: 32px;
+	/*width: 32px;
+	height: 32px;*/
     border: none;
     padding: 0px 0px;
 	z-index: 2;
 	outline: rgba(255, 255, 255, 1) solid 2px;
+	outline-offset: -1.5px;
+}
+
+.markerc{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 32px;
+	height: 32px;*/
+    border: none;
+    padding: 0px 0px;
+	z-index: 2;
+	outline: rgba(255, 200, 150, 1) solid 2px;
+	outline-offset: -1.5px;
+}
+
+.markerd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 32px;
+	height: 32px;*/
+    border: none;
+    padding: 0px 0px;
+	z-index: 2;
+	outline: rgba(255, 125, 50, 1) solid 2px;
+	outline-offset: -1.5px;
+}
+
+.markere{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 32px;
+	height: 32px;*/
+    border: none;
+    padding: 0px 0px;
+	z-index: 2;
+	outline: rgba(255, 0, 0, 1) solid 2px;
 	outline-offset: -1.5px;
 }
 
@@ -61,7 +100,7 @@ button:active{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 720px;
+	/*width: 720px;*/
 	padding-top: 0px;
 	padding-left: 0px;
 	display: none;
@@ -84,8 +123,13 @@ img{
 }
 .map-container{
 	position: relative;
-	max-width: 720px;
+	/*max-width: 720px;*/
 	max-height: 480px;
+}
+.interface{
+	position:absolute;
+	display: inline-block;
+	left: 745px;
 }
 a{
 	background-color: #ffffcc;
@@ -135,15 +179,9 @@ a{
 	opacity: 0.5;
 	filter: grayscale(100%);
 }
-table{
-	position: relative;
-	width: 600px;
-	height: 28px;
-	margin-top: 10px;
-	margin-bottom: -13px;
+.off{
+	filter: grayscale(100%);
 }
-td{
-	width: 32px;
-	height: 32px;
-	padding-top: 5px;
+.on{
+	filter: grayscale(0%);
 }
