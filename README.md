@@ -11,3 +11,4 @@ A debug tooltip is left in, showing "marker#" in the top left. Please use this t
 If you would like to help feedback, corrections or improvements are welcome.
 
 Big thanks to sigonasr2 for all the improvements made in such short time.
+Also thanks to the Rabi community for being so helpful!
