@@ -14,7 +14,7 @@ var lastClick;
 function justLoaded(){
 	hideAll();
 	drawMarkers();
-	showSection(5);
+	showSection(0);
 }
 
 function hideAll(){
