@@ -36,26 +36,26 @@ markers = [
 	new Location(548, 310),
 	new Location(582, 378),
 	new Location(582, 343),	// 36 End of South Woodlands
-	new Location(74, 204),	// 37 Start of Western Coast
-	new Location(132, 115),
-	new Location(190, 85),
-	new Location(280, 115),	//40
-	new Location(308, 204),
-	new Location(336, 115),
-	new Location(367, 87),
-	new Location(394, 204),
-	new Location(394, 172),	// 45
-	new Location(425, 204),
-	new Location(424, 145),
-	new Location(424, 57),
-	new Location(454, 0),	
-	new Location(482, 57),	// 50
-	new Location(482, 174),
-	new Location(510, 144),
-	new Location(540, 174),
-	new Location(570, 144),
-	new Location(570, 85),
-	new Location(660, 85),	// 56 End of Western Coast
+	new Location(60, 448),	// 37 Start of Western Coast  74 x 204 (-14 x +244)
+	new Location(118, 359),
+	new Location(180, 329),
+	new Location(270, 359),	//40
+	new Location(301, 448),
+	new Location(330, 359),
+	new Location(362, 331),
+	new Location(390, 448),
+	new Location(390, 418),	// 45
+	new Location(420, 448),
+	new Location(420, 389),
+	new Location(420, 298),
+	new Location(450, 239),	
+	new Location(480, 300),	// 50
+	new Location(480, 418),
+	new Location(508, 388),
+	new Location(538, 418),
+	new Location(568, 388),
+	new Location(570, 328),
+	new Location(660, 328),	// 56 End of Western Coast
 	new Location(190, 0),	// 57 Start of Island Core
 	new Location(160, 33),
 	new Location(220, 33),
@@ -182,10 +182,25 @@ markers = [
 	new Location(398, 457),	// 180
 	new Location(305, 365),
 	new Location(275, 365),
+	new Location(105, 120),	// 183 gravyard and skytown markers because we overlooked them
+	new Location(135, 150),
+	new Location(135, 180),	// 185
+	new Location(225, 180),
+	new Location(225, 120),
+	new Location(225, 90),
+	new Location(285, 120),
+	new Location(285, 180),	// 190
+	new Location(521, 150),
+	new Location(581, 120),
+	new Location(581, 90),
+	new Location(640, 90),
+	new Location(610, 0),	// 195
+	new Location(551, 30),
+	new Location(464, 30),
 ];
 
 openMarkers = [0,4,6,7,10,19,23,22,25,28,30,34,					//S Woodlands
-			   39,40,47,49,52,53,54,55,56,						//W Coast
+			   39,40,47,49,52,53,54,55,56,184,186,					//W Coast
 			   59,60,75,76,77,79,82,83,84,89,					//I Core
 			   92,93,101,102,106,109,116,117,119,120,123,		//N Tundra
 			   127,129,134,136,142,147,151,152,153,156,159,160,	//E Highlands
@@ -224,6 +239,8 @@ function drawMarkers(){
 			eh.appendChild(markers[i].elem);
 		} else if (( i >= 164 ) && ( i <= 182 )){
 			ot.appendChild(markers[i].elem);
+		} else if (( i >= 183 ) && ( i <= 197 )){
+			wc.appendChild(markers[i].elem);
 		}
 	}
 	for ( i = 0; i < openMarkers.length; i++){
