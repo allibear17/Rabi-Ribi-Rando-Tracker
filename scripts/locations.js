@@ -1144,8 +1144,8 @@ function drawMarkers(){
 	for ( i = 0; i < markers.length; i++){
 		if (markers[i].elem=="") {
 			markers[i].elem = document.createElement("img");
+			markers[i].elem.setAttribute("src","images/marker0.png");
 		}
-		markers[i].elem.setAttribute("src","images/marker0.png");
 		markers[i].elem.setAttribute("class","markera");
 		markers[i].elem.id = markers[i].itemName + "("+Math.round((markers[i].x-markers[i].gridObj.xoffset)/markers[i].gridObj.xgrid)+","+Math.round((markers[i].y-markers[i].gridObj.yoffset)/markers[i].gridObj.ygrid)+")";
 		markers[i].elem.style.left = markers[i].x + "px";
